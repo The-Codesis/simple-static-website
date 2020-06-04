@@ -25,12 +25,12 @@ git config --global user.email johndoe@example.com
 
 Switch Simple-Static-Website to your fork
 ```
-git remote set-url origin https://github.com/<your username>/pecan.git
+git remote set-url origin https://github.com/<your username>/simple-static-website.git
 ```
 
-Setup pecan to be able to fetch from the master
+Setup simple-static-website to be able to fetch from the master
 ```
-git remote add upstream https://github.com/PecanProject/simple-static-website.git
+git remote add upstream https://github.com/The-Codesis/simple-static-website.git
 ```
 
 ## Adding Features
@@ -76,4 +76,4 @@ git push -u origin GH-issuenumber-title-of-issue
 
 ### Pull Request
 
- When finished create a pull request from your branch to the main pecan repository.
+ When finished create a pull request from your branch to the main Simple-Static-Website repository.
