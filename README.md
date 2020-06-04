@@ -1,4 +1,4 @@
-# simple-static-website
+# Simple-Static-Website
 This repository will help the beginners who have just completed the Git course &amp; want to apply there theoretical knowledge.
 
 # How to contribute
