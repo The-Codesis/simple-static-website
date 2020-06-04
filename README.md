@@ -23,6 +23,11 @@ git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
 ```
 
+Make sure you clone the forked repo.
+```
+git clone https://github.com/<your username>/simple-static-website.git
+```
+
 Switch Simple-Static-Website to your fork
 ```
 git remote set-url origin https://github.com/<your username>/simple-static-website.git
