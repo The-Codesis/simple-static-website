@@ -1,1 +1,39 @@
 /** ADD YOUR AWESOME CODES HERE **/
+
+.news_headline{
+    font-size: 18px;
+    margin: 0px;
+    color: #222222;
+    font-weight: 600;
+    margin-top: 24px;
+}
+.news_card span{
+    font-weight: 400;
+    font-size: 14px;
+}
+.line{
+    color: #07528d;
+    margin: 0px;
+}
+.news_content{
+    text-overflow: ellipsis;
+}
+
+.news_card{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.link{
+    color: royalblue;
+}
+
+.img-responsive{
+    padding: 0px;
+}
+
+.heading h2{
+    font-size: 32px;
+    font-weight: 600;
+    color: #07528d;
+}
