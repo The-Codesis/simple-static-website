@@ -173,6 +173,10 @@ a.navbar-brand img {
 }
 /* mobile or only mobile */
  @media (max-width: 767px) {
+     .news{
+         margin-left: 4px;
+         margin-right: 4px;
+     }
      .navbar-brand{
          margin-left: 10px;
          margin-right: 10px;
