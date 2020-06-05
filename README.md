@@ -61,7 +61,7 @@ git push
 
 ### Create a branch to do your work.
 
-A good practice is to call the branch in the form of GH- followed by the title of the issue. This makes it easier to find out the issue you are trying to solve and helps us to understand what is done in the branch. Calling a branch my-work is confusing. Names of a branch can not have space and should be replaced with a hyphen.
+A good practice is to call the branch in the form of GH-<issue-number> followed by the title of the issue. This makes it easier to find out the issue you are trying to solve and helps us to understand what is done in the branch. Calling a branch my-work is confusing. Names of a branch can not have a space, and should be replaced with a hyphen.
 
 ```
 git checkout -b GH-issuenumber-title-of-issue
