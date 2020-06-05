@@ -14,7 +14,7 @@ Geeks who are eager to contibute, must read it.
 
 ## Getting Started
 
-1. Goto the [Simple-Static-Website](https://github.com/The-Codesis/simple-static-website/) repo.
+1. Goto the [Simple-Static-Website](https://github.com/The-Codesis/simple-static-website/) repository
 2. Click on the Fork button in the upper right corner.
 
 Introduce your self to GIT, make sure you use an email associated with your GitHub account.
@@ -23,7 +23,7 @@ git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
 ```
 
-Make sure you clone the forked repo.
+Make sure you clone the forked repository.
 ```
 git clone https://github.com/<your username>/simple-static-website.git
 ```
