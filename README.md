@@ -48,11 +48,11 @@ Finally, try to keep your branches focused on fixing/adding only one feature and
 
 Here is a simplified workflow on how to add a new feature:
 
-### Syncing with Fork
+### Syncing with fork
 
 Syncing your forked repository to the original repository is an important step before submitting any pull request to the original repository. So, it goes something like, you fetch from the original repository (Upstream Repository) to your working area (your local copy) and merge it with the fork's master branch and then you push it to your forked Github repository.
 
-You can see all your remotes with ```git remote -v``` , if you don't have upstream set as ```https://github.com/The-Codesis/simple-static-website.git``` , set up  the original repository as your upstream by:
+You can see all your remotes with ```git remote -v```, if you don't have upstream set as ```https://github.com/The-Codesis/simple-static-website.git```, set up  the original repository as your upstream.
 ```
 git remote add upstream https://github.com/The-Codesis/simple-static-website.git
 ```
@@ -60,16 +60,16 @@ Now, fetch all of the changes from the original repository (Note that commits to
 ```
 git fetch upstream
 ```
-Since you want fork's master branch and the original's master branch should be synced, so make sure your branch to your fork's master branch and then merge (you may need to resolve the conflicts) as:
+Since you want fork's master branch and the original's master branch should be synced, so make sure you are  on fork's master branch and merge the changes from the upstream/master (you may need to resolve the conflicts).
 ```
 git checkout master
 git merge upstream/master
 ```
-At this point, your local branch is synced to the original repositories master branch. To update your forked Github repository, you need to push your changes to it.
+At this point, your local branch is synced to the original repository's master branch. To update your forked Github repository, you need to push your changes to it.
 ```
 git push origin master
 ```
-To summarise, see the section below.
+To summarize, see the section below.
 
 ### Get latest version
 
