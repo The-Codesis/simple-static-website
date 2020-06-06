@@ -60,7 +60,7 @@ Now, fetch all of the changes from the original repository (note that commits to
 ```
 git fetch upstream
 ```
-Since you want fork's master branch and the original's master branch should be synced, so make sure you are on fork's master branch and merge the changes from the upstream/master (you may need to resolve the conflicts).
+Since you want fork's master branch and the original's master branch should be synced, so make sure you are on fork's master branch and merge the changes from the upstream/master into your fork's local master branch (you may need to resolve the conflicts).
 ```
 git checkout master
 git merge upstream/master
