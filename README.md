@@ -56,6 +56,9 @@ You can see all your remotes with ```git remote -v```, if you don't have upstrea
 ```
 git remote add upstream https://github.com/The-Codesis/simple-static-website.git
 ```
+
+By now, you have set the upstream as the original repository i.e. ```https://github.com/The-Codesis/simple-static-website.git``` and the origin as the forked repository i.e. ```https://github.com/<your username>/simple-static-website.git```.
+
 Now, fetch all of the changes from the original repository (Note that commits to the original repository will be stored in a local branch called, upstream/master).
 ```
 git fetch upstream
