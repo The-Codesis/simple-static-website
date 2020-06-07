@@ -1,0 +1,10 @@
+.spaning img {
+    margin-right: 10px;
+}
+.spaning .img-left {
+    float: left;
+}
+.spaning .img-right {
+    float: right;
+}
+
