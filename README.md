@@ -48,6 +48,31 @@ Finally, try to keep your branches focused on fixing/adding only one feature and
 
 Here is a simplified workflow on how to add a new feature:
 
+### Syncing with fork
+
+Syncing your forked repository to the original repository is an important step before submitting any pull request to the original repository. So, it goes something like, you fetch from the original repository (Upstream Repository) to your working area (your local copy) and merge it with the fork's master branch and then you push it to your forked Github repository.
+
+You can see all your remotes with ```git remote -v```, if you don't have upstream set as ```https://github.com/The-Codesis/simple-static-website.git```, set up  the original repository as your upstream.
+```
+git remote add upstream https://github.com/The-Codesis/simple-static-website.git
+```
+By now, you have set the upstream as the original repository i.e. ```https://github.com/The-Codesis/simple-static-website.git``` and the origin as the forked repository i.e. ```https://github.com/<your username>/simple-static-website.git```.
+
+Now, fetch all of the changes from the original repository (note that commits to the original repository will be stored in a local branch called, upstream/master).
+```
+git fetch upstream
+```
+Since you want fork's master branch and the original's master branch should be synced, so make sure you are on fork's master branch and merge the changes from the upstream/master into your fork's local master branch (you may need to resolve the conflicts).
+```
+git checkout master
+git merge upstream/master
+```
+At this point, your local branch is synced to the original repository's master branch. To update your forked Github repository, you need to push your changes to the forked Github repository.
+```
+git push origin master
+```
+To summarize, see the section below.
+
 ### Get latest version
 
 Update your master (both locally and on GitHub)
