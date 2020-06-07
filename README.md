@@ -96,6 +96,24 @@ git checkout -b GH-issuenumber-title-of-issue
 
 Do you work, and commit as you see fit. Make your commit messages helpful.
 
+In general commit messages follow these guidelines 
+
+```
+A brief commit message in one or two lines
+```
+**Followed By**
+
+```
+Detailed explanation of your commit 
+
+eg : If this commit fixes a bug in the code then describe the bug, what was causing it, your solution or 
+any other relevant thing one should know if someone else works on this project.
+```
+See this [commit format](https://commit.style/)
+
+You can also refer this [article](https://medium.com/@steveamaza/how-to-write-a-proper-git-commit-message-e028865e5791) on how to write commit messages. 
+
+
 ### Push your changes up to GitHub.
 
 If this is the first time pushing to GitHub you will need to extended command, otherwise, you can simply do a `git push`.
@@ -106,4 +124,37 @@ git push -u origin GH-issuenumber-title-of-issue
 
 ### Pull Request
 
- When finished create a pull request from your branch to the main Simple-Static-Website repository.
+- When finished create a pull request from your branch to the main Simple-Static-Website repository.
+
+- When making a pull request use `Closes #(issue_number)` in the description of your PR, so that GitHub automatically associates your PR with that issue.
+
+- In the description of your PR, mention what bug or feature this provides. Give any relevant information, that you think maintainer should know like :
+
+ - Tests you did to check your new PR or code
+ - Your approach to the problem
+ - Any other relevant information that you think one might keep in mind for future
+
+Make it clear,complete and simple so your PR gets merged easily !
+
+Refer this [Git Fork and Pull Request Cheat Sheet](https://help.github.com/en/articles/about-pull-request-merges)
+
+
+### Code Review 
+
+- You can also help the community by reviewing other people's PR, this is known as **code review**
+
+- Go to a PR, then **Files Changed** section, review the code and mark the file as reviewed
+
+- You can also use GitHub's WebUI to add comments and provide some suggestions for PR's author.
+
+Refer this [link](https://medium.com/osedea/the-perfect-code-review-process-845e6ba5c31) to know about **Code Reviews** and its importance. 
+
+### Using GitHub UI :
+
+GitHub provides a Web UI to make communication process easier
+
+- You can use `@(account_name)` to mention someone
+
+- Mentioning Pull Requests or issues using `#(issue_id)`, Read [this](https://help.github.com/en/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue)
+
+- Also, take a look at [this](https://guides.github.com/features/mastering-markdown/), **Markdown or styling** your messages to increase readibilty for PR description and conversations.
