@@ -100,6 +100,41 @@ git merge upstream/master
 git push
 ```
 
+### Git Merge VS Git Rebase
+
+Rebasing and merging are both used for integrating changes from one branch into another—but they do it in different ways.
+
+Instead of 
+```
+git merge upstream/master
+```
+you can also use
+```
+git rebase upstream/master
+```
+#### The Merge Option
+
+`git merge` will integrate the histories of the upstream branch and your master branch, giving you a branch structure that looks like:
+
+![IMAGE](https://wac-cdn.atlassian.com/dam/jcr:e229fef6-2c2f-4a4f-b270-e1e1baa94055/02.svg?cdnVersion=1060)
+
+Merging preserves history since, the existing branches are not changed in any way.Merging adds a new commit to the history. 
+
+#### The Rebase Option
+
+`git rebase` will move the entire upstream branch on the tip of your master branch, giving you a branch structure that looks like:
+
+![IMAGE](https://wac-cdn.atlassian.com/dam/jcr:5b153a22-38be-40d0-aec8-5f2fffc771e5/03.svg?cdnVersion=1060)
+
+Rebasing re-writes the history by creating brand new commits for each commit in the original branch.
+
+#### Which command to prefer?
+
+`git rebase` is usually preferred over `git merge` because
+>- It results in a perfectly linear and readable history.
+>- It eliminates the unnecessary merge commits required by git merge. 
+>- It can remove undesired commits or squash two or more commits into one.
+
 ### Create a branch to do your work.
 
 A good practice is to call the branch in the form of GH-<issue-number> followed by the title of the issue. This makes it easier to find out the issue you are trying to solve and helps us to understand what is done in the branch. Calling a branch my-work is confusing. Names of a branch can not have a space, and should be replaced with a hyphen.
