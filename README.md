@@ -71,6 +71,22 @@ At this point, your local branch is synced to the original repository's master b
 ```
 git push origin master
 ```
+
+#### Alternative
+
+Set up  the original repository as your upstream.
+```
+git remote add upstream https://github.com/The-Codesis/simple-static-website.git
+```
+Now, fetch and merge the changes from the original repository simultaneously.
+```
+git pull upstream master
+```
+Update your forked Github repository.
+```
+git push origin master
+```
+
 To summarize, see the section below.
 
 ### Get latest version
