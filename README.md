@@ -74,6 +74,8 @@ git push origin master
 
 #### Alternative
 
+`git fetch` only downloads the changes from the upstream and doesn't integrate those into your forked repository. You have to use an additional command `git merge` to do so. Alternatively, `git pull` not only downloads the changes but also integrate those into your forked repository.
+
 Set up  the original repository as your upstream.
 ```
 git remote add upstream https://github.com/The-Codesis/simple-static-website.git
