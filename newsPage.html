@@ -26,72 +26,8 @@
     <link rel="stylesheet" href="css/responsive.css" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css" />
-    <style>
-    	.imageHead {
-    		opacity:0.6;
-    		padding:5px;
-        transform: scale(0.7);
-
-    	}
-    	.imageHead:hover{
-    		opacity:1;
-    		box-shadow:10px 10px 10px ;
-    		border:0px;
-    		border-color: black;
-    		transform: scale(1.1);
-    		background-color:#0D1042;
-    	}
-      .img__wrap {
-        margin:50px;
-        display: block;
-/*        height: 200px;
-        width: 257px;*/
-        filter: blur(5px) brightness(20%) ;
-        opacity:0.7;
-        float:left;
-      }
-
-      .img__description {
-        position: absolute;
-        visibility: hidden;
-        opacity: 0;
-        top:50%;
-        left:0px;
-      }
-
-      .img__wrap:hover .img__description {
-        visibility: visible;
-        opacity: 1;
-        background-color: #000;
-        color: #fff;
-        transform: scale(1.3);
-        font-size: 1.5em;
-      }
-      .img__wrap:hover {
-        filter: blur(0px) grayscale(0%) drop-shadow(8px 8px 10px gray) brightness(70%);
-        opacity:0.7;
-      }
-      .moreTopic{
-        clear:both;
-      }
-    .newsTable{
-      float: left;
-      margin:50px;
-      display: block;
-      text-align: center;
-    }
-    table{
-        border: 3px solid #0D1042;
-              width:200%;
-    }
-    tr{
-        border: 3px solid #0D1042;
-      }
-    td{
-        border: 3px solid #0D1042;
-      }
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/newsPageStyle.css"/>
+    
 </head>
 <body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
 
@@ -104,7 +40,7 @@
     <!-- END LOADER -->
 
     
-    <!-- Start header -->
+        <!-- Start header -->
     <header class="top-header">
       <nav class="navbar header-nav navbar-expand-lg">
         <div class="container-fluid">
@@ -133,7 +69,7 @@
               <li><a class="nav-link" href="about.html">About</a></li>
               <li><a class="nav-link" href="courses.html">Courses</a></li>
               <li><a class="nav-link" href="reaserch.html">Reaserch</a></li>
-              <li><a class="nav-link" href="news.html">News</a></li>
+              <li><a class="nav-link" href="newsPage.html">News</a></li>
               <li><a class="nav-link" href="contact.html">Contact us</a></li>
             </ul>
           </div>
@@ -147,19 +83,8 @@
       </nav>
     </header>
     <!-- End header -->
-   <!--Title banner-->
-       <section class="inner_banner">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="full">
-              <h3>News</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--end of title banner-->
+
+
     <!-- Start Banner -->
     <div class="ulockd-home-slider">
         <div class="container-fluid">
@@ -203,6 +128,19 @@
         </div>
     </div>
     <!-- End Banner -->
+        <!-- section -->
+
+    <section class="inner_banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="full">
+              <h3>News</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!--newsletter-->
     <div style="text-align: center;">
       <span class="theme_color" style="font-size:2em;">Update Yourself with buzzing Technology </span>
@@ -217,14 +155,7 @@
               </div>
               <div class="full">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum
+                  A newsletter is a printed or electronic report containing news concerning of the activities of a business or an organization that is sent to its members, customers, employees or other subscribers. Our newsletter brings to you latest gripping news and happenings in the fields of technology and research.
                 </p>
               </div>
               <div class="full">
@@ -255,14 +186,7 @@
               </div>
               <div class="full">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum
+                  A blog is a discussion or informational website published on the World Wide Web consisting of discrete, often informal diary-style text entries. We are a team of enthusiastic developers who are very much interested in exploring the latest updates in technology and to share are knowledge with others intersted in more comprehensible way. You can also find the different ways we have gone about learning things and improve yourself.
                 </p>
               </div>
               <div class="full">
@@ -381,7 +305,7 @@
             <div class="footer_blog full white_fonts">
               <h3>Newsletter</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                The goal of us is to bring about better-informed and more conscious decisions about technology through influential, and trustworthy journalism.
               </p>
               <div class="newsletter_form">
                 <form action="index.html">
@@ -441,127 +365,6 @@
     <script src="js/isotope.min.js"></script>
     <script src="js/images-loded.min.js"></script>
     <script src="js/custom.js"></script>
-    <script>
-      /* counter js */
-
-      (function($) {
-        $.fn.countTo = function(options) {
-          options = options || {};
-
-          return $(this).each(function() {
-            // set options for current element
-            var settings = $.extend(
-              {},
-              $.fn.countTo.defaults,
-              {
-                from: $(this).data("from"),
-                to: $(this).data("to"),
-                speed: $(this).data("speed"),
-                refreshInterval: $(this).data("refresh-interval"),
-                decimals: $(this).data("decimals"),
-              },
-              options
-            );
-
-            // how many times to update the value, and how much to increment the value on each update
-            var loops = Math.ceil(settings.speed / settings.refreshInterval),
-              increment = (settings.to - settings.from) / loops;
-
-            // references & variables that will change with each update
-            var self = this,
-              $self = $(this),
-              loopCount = 0,
-              value = settings.from,
-              data = $self.data("countTo") || {};
-
-            $self.data("countTo", data);
-
-            // if an existing interval can be found, clear it first
-            if (data.interval) {
-              clearInterval(data.interval);
-            }
-            data.interval = setInterval(updateTimer, settings.refreshInterval);
-
-            // initialize the element with the starting value
-            render(value);
-
-            function updateTimer() {
-              value += increment;
-              loopCount++;
-
-              render(value);
-
-              if (typeof settings.onUpdate == "function") {
-                settings.onUpdate.call(self, value);
-              }
-
-              if (loopCount >= loops) {
-                // remove the interval
-                $self.removeData("countTo");
-                clearInterval(data.interval);
-                value = settings.to;
-
-                if (typeof settings.onComplete == "function") {
-                  settings.onComplete.call(self, value);
-                }
-              }
-            }
-
-            function render(value) {
-              var formattedValue = settings.formatter.call(
-                self,
-                value,
-                settings
-              );
-              $self.html(formattedValue);
-            }
-          });
-        };
-
-        $.fn.countTo.defaults = {
-          from: 0, // the number the element should start at
-          to: 0, // the number the element should end at
-          speed: 1000, // how long it should take to count between the target numbers
-          refreshInterval: 100, // how often the element should be updated
-          decimals: 0, // the number of decimal places to show
-          formatter: formatter, // handler for formatting the value before rendering
-          onUpdate: null, // callback method for every time the element is updated
-          onComplete: null, // callback method for when the element finishes updating
-        };
-
-        function formatter(value, settings) {
-          return value.toFixed(settings.decimals);
-        }
-      })(jQuery);
-
-      jQuery(function($) {
-        // custom formatting example
-        $(".count-number").data("countToOptions", {
-          formatter: function(value, options) {
-            return value
-              .toFixed(options.decimals)
-              .replace(/\B(?=(?:\d{3})+(?!\d))/g, ",");
-          },
-        });
-
-        // start all the timers
-        $(".timer").each(count);
-
-        function count(options) {
-          var $this = $(this);
-          options = $.extend(
-            {},
-            options || {},
-            $this.data("countToOptions") || {}
-          );
-          $this.countTo(options);
-        }
-      });
-		function bgChange(id,bg,fontcolor,size) {
-  			document.getElementById(id).style.background = bg;
-  			document.getElementById(id).style.color=fontcolor;
-  			document.getElementById(id).style.fontSize=size;
-		}
-    </script>
+    <script src="js/newPagescript.js"></script>
 </body>
 </html>
