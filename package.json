@@ -1,0 +1,23 @@
+{
+  "name": "simple-static-website",
+  "version": "1.0.0",
+  "description": "This repository will help beginners who have just completed the Git course &amp; want to apply their theoretical knowledge.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tushar5526/simple-static-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tushar5526/simple-static-website/issues"
+  },
+  "homepage": "https://github.com/tushar5526/simple-static-website#readme",
+  "devDependencies": {
+    "prettier": "2.0.5"
+  }
+}
