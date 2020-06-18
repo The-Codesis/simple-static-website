@@ -2,7 +2,8 @@
 This repository will help beginners who have just completed the Git course &amp; want to apply their theoretical knowledge.
 
 # How to contribute
-Geeks who are eager to contribute, must read it. 
+Geeks who are eager to contribute, must read it.  
+Join the Discord : https://discord.gg/XcMCreX
 
 ## Creating Issues
 
