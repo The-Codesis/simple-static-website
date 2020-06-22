@@ -1,6 +1,9 @@
 # Simple Static Website
 This repository will help beginners who have just completed the Git course &amp; want to apply their theoretical knowledge.
 
+# Join Us
+Discord : https://discord.gg/XcMCreX
+
 # How to contribute
 Geeks who are eager to contribute, must read it. 
 
