@@ -33,6 +33,29 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css" />
 
+    <!-- DARK MODE============================================================ -->
+    <link disabled id="dark-reader" rel="stylesheet" href="css/dark.css" />
+    <script>
+      function dark_toggle() {
+        var el1 = document.getElementById("dark-reader");
+        if (el1.disabled) {
+          el1.disabled = false;
+          localStorage.setItem("darkreader", "enabled");
+        } else {
+          el1.disabled = true;
+          localStorage.setItem("darkreader", "disabled");
+        }
+      }
+    </script>
+    <script>
+      if (localStorage.getItem("darkreader") == "enabled") {
+        document.getElementById("dark-reader").disabled = false;
+      } else {
+        document.getElementById("dark-reader").disabled = true;
+      }
+    </script>
+    <!-- DARK MODE============================================================ -->
+
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -85,6 +108,17 @@
               <li><a class="nav-link" href="research.html">Research</a></li>
               <li><a class="nav-link" href="news.html">News</a></li>
               <li><a class="nav-link" href="contact.html">Contact us</a></li>
+              <!-- DARK MODE  -->
+              <li>
+                <a
+                  class="nav-link"
+                  href="javascript:void(0)"
+                  onclick="dark_toggle();return false;"
+                  title="Toggle night mode"
+                  >Dark Mode
+                </a>
+              </li>
+              <!-- DARK MODE  -->
             </ul>
           </div>
           <div class="search-box">
@@ -117,7 +151,7 @@
     <!-- section -->
     <div
       class="section layout_padding contact_section"
-      style="background:#f6f6f6;"
+      style="background: #f6f6f6;"
     >
       <div class="container">
         <div class="row">
@@ -176,7 +210,9 @@
               </div>
               <div class="full white_fonts">
                 <p>
-                 Welcome to Perfect learn! PL is a fun, responsive and effective way to learn online. Have a look at our exciting Smart Lessons in Science, English, Maths!
+                  Welcome to Perfect learn! PL is a fun, responsive and
+                  effective way to learn online. Have a look at our exciting
+                  Smart Lessons in Science, English, Maths!
                 </p>
               </div>
             </div>
@@ -265,11 +301,11 @@
     <script>
       /* counter js */
 
-      (function($) {
-        $.fn.countTo = function(options) {
+      (function ($) {
+        $.fn.countTo = function (options) {
           options = options || {};
 
-          return $(this).each(function() {
+          return $(this).each(function () {
             // set options for current element
             var settings = $.extend(
               {},
@@ -355,10 +391,10 @@
         }
       })(jQuery);
 
-      jQuery(function($) {
+      jQuery(function ($) {
         // custom formatting example
         $(".count-number").data("countToOptions", {
-          formatter: function(value, options) {
+          formatter: function (value, options) {
             return value
               .toFixed(options.decimals)
               .replace(/\B(?=(?:\d{3})+(?!\d))/g, ",");
