@@ -170,6 +170,41 @@ See this [commit format](https://commit.style/)
 You can also refer this [article](https://medium.com/@steveamaza/how-to-write-a-proper-git-commit-message-e028865e5791) on how to write commit messages. 
 
 
+### Git Squash
+
+To `squash` means commonly to compact multiple commits into one to make it more concise, readable and not to pollute main branch’s history. To achieve that, interactive mode of `git rebase` command used.
+To squash the last n commits into one, run the following command:
+
+```
+git rebase -i HEAD~n
+```
+
+That will open up a text-editor with something similar to the following:
+
+```
+pick commit_1
+pick commit_2
+pick commit_3
+...
+pick commit_n
+# Bunch of comments
+```
+
+Leave the first commit alone, and change the rest of the `pick` to `squash` or `s`.
+
+```
+pick commit_1
+squash commit_2
+squash commit_3
+...
+squash commit_n
+# Bunch of comments
+```
+
+Save and exit the editor. Now, the editor will reopen right away suggesting to reword commit messages. Make the changes if you want. The commit message will include all the lines that are not starting with `#` character. Once again, save and exit the editor.
+Your terminal now would show a success message including `Successfully rebased and updated <branch name>` and the `git log` would show a compacted history with only one commit.
+
+
 ### Push your changes up to GitHub.
 
 If this is the first time pushing to GitHub you will need to extended command, otherwise, you can simply do a `git push`.
