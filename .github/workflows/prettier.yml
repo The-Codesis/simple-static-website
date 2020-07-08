@@ -1,0 +1,38 @@
+on:
+  issue_comment:
+    types: [created]
+name: Commands
+jobs:
+  style:
+    if: startsWith(github.event.comment.body, '/style')
+    name: style
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install yarn
+        run: |
+          curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+          echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+          sudo apt update
+          sudo apt install yarn
+
+      - uses: actions/checkout@v2
+      - name: Initialize yarn
+        run: |
+          yarn init -y
+          yarn add -E prettier
+      - uses: r-lib/actions/pr-fetch@master
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Run yarn 
+        run: yarn run prettier --write '**/*.{css,js,html}'
+
+      - name: commit
+        run: |
+          git add \*.css \*.html \*.js
+          git config --global user.email "bot@example.com"
+          git config --global user.name "Bot"
+          if [[ $(git diff --name-only --cached) != "" ]]; then  git commit -m 'automated syle update' ; fi
+      - uses: r-lib/actions/pr-push@master
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
