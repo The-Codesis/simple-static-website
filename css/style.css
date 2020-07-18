@@ -1922,8 +1922,16 @@ h3.small_heading {
 	margin-top: 50px;
 }
 
+.margin-top_150 {
+	margin-top: 150px;
+}
+
 .margin-bottom_30 {
 	margin-bottom: 30px;
+}
+
+.margin-bottom_60 {
+	margin-bottom: 60px;
 }
 
 .carousel a.carousel-control-prev {
