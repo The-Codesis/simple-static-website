@@ -2,6 +2,7 @@
 This repository will help beginners who have just completed the Git course &amp; want to apply their theoretical knowledge.
 
 # Join Us
+#This is Discord Link Join Us:
 Discord : https://discord.gg/XcMCreX
 
 # How to contribute
@@ -249,3 +250,4 @@ GitHub provides a Web UI to make communication process easier
 - Mentioning Pull Requests or issues using `#(issue_id)`, Read [this](https://help.github.com/en/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue)
 
 - Also, take a look at [this](https://guides.github.com/features/mastering-markdown/), **Markdown or styling** your messages to increase readibilty for PR description and conversations.
+- Dont Forget to join Discord.
